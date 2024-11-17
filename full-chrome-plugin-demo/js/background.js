@@ -169,5 +169,4 @@ chrome.webRequest.onCompleted.addListener(completed => {
     if (completed.url.indexOf('.m3u8') > 0) {
         console.log(completed)
     }
-
 }, { urls: ["<all_urls>"] });
