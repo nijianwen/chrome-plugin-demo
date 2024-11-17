@@ -218,5 +218,5 @@ $('#show_notification').click(e => {
 
 $('#check_media').click(e => {
 	alert('即将打开一个有视频的网站，届时将自动检测是否存在视频！');
-	chrome.tabs.create({url: 'http://www.w3school.com.cn/tiy/t.asp?f=html5_video'});
+	chrome.tabs.create({url: 'https://www.kuaishou.com/short-video/3x7gpt72jzfqege'});
 });
