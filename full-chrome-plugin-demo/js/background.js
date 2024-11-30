@@ -149,10 +149,17 @@ chrome.webRequest.onBeforeRequest.addListener(details => {
         // 	title: '检测到音视频',
         // 	message: '音视频地址：' + details.url,
         // });
-        alert(details.type + '---' + details.url)
+        // 使用示例：下载某个URL的文件，并指定文件名
+        let urlTemp = new URL(details.url);
+        let pathNameArray = urlTemp.pathname.split('/');
+        let fileName = pathNameArray[pathNameArray.length-1];
+        
+        console.log(details.type, details.url,fileName)
+        downloadFile(details.url,fileName);
+
     }
     if (details.url.indexOf('.m3u8') > 0) {
-        alert(details.type + '---' + details.url)
+        // alert(details.type + '---' + details.url)
     }
     // if(details.type == 'h2') {
     // chrome.notifications.create(null, {
@@ -170,3 +177,19 @@ chrome.webRequest.onCompleted.addListener(completed => {
         console.log(completed)
     }
 }, { urls: ["<all_urls>"] });
+
+function downloadFile(url, filename) {
+    if(filename in downList){
+        console.log(url,filename,'已经下载过了',downList)
+    }else{
+        downList[filename]=1;
+    }
+    // 创建一个不可见的<a>元素
+    var elem = window.document.createElement('a');
+    elem.href = url;
+    elem.download = filename; // 设置下载的文件名
+    document.body.appendChild(elem);
+    elem.click(); // 模拟点击以开始下载
+    document.body.removeChild(elem); // 下载完成后移除元素
+}
+var downList = {};
