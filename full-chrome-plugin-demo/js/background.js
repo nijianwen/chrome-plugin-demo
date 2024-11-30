@@ -155,7 +155,7 @@ chrome.webRequest.onBeforeRequest.addListener(details => {
         let fileName = pathNameArray[pathNameArray.length-1];
         
         console.log(details.type, details.url,fileName)
-        downloadFile(details.url,fileName);
+        // downloadFile(details.url,fileName);
 
     }
     if (details.url.indexOf('.m3u8') > 0) {

@@ -1,0 +1,748 @@
+https://v2.kwaicdn.com/ksc2/eidIchtZs3WnJiXRS2dwZYEjjSsgoj6TfC7wtHMpYRsKrZTw2TJeq0T15fP6PKVRS36XGVtOVGc_uDrK7stErPzsFoMBnsUTBf3mzGml2K_LxaLBv1_t7XsUFCLFyMyF.mp4?pkey=AAUNPQM7RDVxp3FwZJwh8wlVjKV_uCe2eiJZgukE3kwsFbWp8tpRZzLhyGlRE9zj5XNXlejP1Vt2YoEI62hizJ_PHO3wjHvOQAAKtVC6stzmI58znOuW4YRBeAO9oZH94MY&tag=1-1732950314-unknown-0-cdavlyidxf-55fffba2bccac9c8&clientCacheKey=3xgdh378bhb9pmc_463759e1&di=JA4DQ5pryQCkhgkGH5mvXA==&bp=10004&tt=hd15&ss=vp
+
+
+"defaultClient": {
+    "ROOT_QUERY": {
+        "kconf({\"key\":\"frontendExplore.vision.uiConfig\"})": {
+            "type": "json",
+            "json": {
+                "topBar": {
+                    "logoImgUrl": "",
+                    "background": "#222",
+                    "backgroundTop": "rgba(34,34,34,0.5)",
+                    "leftItemConfig": {
+                        "defaultState": {
+                            "fontColor": "rgba(255,255,255,0.8)",
+                            "fontWeight": 700
+                        },
+                        "hoverState": {
+                            "fontColor": "rgba(254,54,102)",
+                            "fontWeight": 700
+                        }
+                    },
+                    "searchItemConfig": {
+                        "searchTextColor": "rgba(255,255,255,0.8)",
+                        "inputBackground": "rgba(255,255,255,0.1)",
+                        "searchButtonBackground": "rgb(254,54,102)",
+                        "searchButtonTextColor": "rgb(224,255,255)",
+                        "searchButtonFontWeight": 400,
+                        "searchButtonIconUrl": "https:\u002F\u002Fs1-11673.kwimgs.com\u002Fkos\u002Fnlav11673\u002Fui-config\u002Fsearch_default.svg"
+                    },
+                    "rightItemConfig": {
+                        "defaultState": {
+                            "fontColor": "rgb(255,255,255)",
+                            "fontWeight": 500
+                        },
+                        "hoverState": {
+                            "fontColor": "rgb(254,54,102)",
+                            "fontWeight": 500
+                        }
+                    },
+                    "login": {
+                        "loginButtonBackground": "rgb(235,54,97)",
+                        "loginButtonTextColor": "rgb(255,255,255)"
+                    },
+                    "subList": {
+                        "background": "rgb(53,53,53)",
+                        "arrowIcon": "",
+                        "textState": {
+                            "defaultState": {
+                                "fontColor": "rgb(255,255,255)",
+                                "fontWeight": 500
+                            },
+                            "hoverState": {
+                                "fontColor": "rgb(254,54,102)",
+                                "fontWeight": 500
+                            }
+                        }
+                    }
+                },
+                "navigationBar": {
+                    "background": "rgb(34,34,34)",
+                    "textState": {
+                        "defaultState": {
+                            "fontColor": "rgb(255,255,255)",
+                            "fontWeight": 600
+                        },
+                        "hoverState": {
+                            "fontColor": "rgb(254,54,102)",
+                            "fontWeight": 600
+                        }
+                    },
+                    "activedLineColor": "rgb(254,54,102)"
+                },
+                "footer": {
+                    "logoImgUrl": "https:\u002F\u002Fs1-11673.kwimgs.com\u002Fkos\u002Fnlav11673\u002Fui-config\u002Ffooter_logo_normal.svg",
+                    "background": "rgb(29,29,29)",
+                    "titleColor": "rgb(102,102,102)",
+                    "titleFontWeight": 500,
+                    "linkColor": "rgb(102,102,102)",
+                    "linkFontWeight": 400,
+                    "textState": {
+                        "defaultState": {
+                            "fontColor": "rgb(255, 255, 255)",
+                            "fontWeight": 500
+                        },
+                        "hoverState": {
+                            "fontColor": "rgb(254,54,102)",
+                            "fontWeight": 500
+                        }
+                    }
+                },
+                "openGrayPage": false,
+                "activityConfiguration": {
+                    "startTime1": 1727711400000,
+                    "endTime1": 1728316800000,
+                    "startTime2": 1727337600000,
+                    "endTime2": 1727341200000,
+                    "configuration": {
+                        "topBar": {
+                            "logoImgUrl": "https:\u002F\u002Fs1-11673.kwimgs.com\u002Fkos\u002Fnlav11673\u002Fui-config\u002Ftopbar-logo.svg",
+                            "background": "rgba(224,56,56,1)",
+                            "backgroundTop": "rgba(224,56,56,0.7)",
+                            "leftItemConfig": {
+                                "defaultState": {
+                                    "fontColor": "rgb(255,195,195)",
+                                    "fontWeight": 600
+                                },
+                                "hoverState": {
+                                    "fontColor": "rgb(255,255,255)",
+                                    "fontWeight": 600
+                                }
+                            },
+                            "searchItemConfig": {
+                                "searchTextColor": "rgba(255,255,255,0.8)",
+                                "inputBackground": "rgba(255,195,195,0.12)",
+                                "searchButtonBackground": "rgb(255,240,240)",
+                                "searchButtonTextColor": "rgb(224,56,56)",
+                                "searchButtonFontWeight": 500,
+                                "searchButtonIconUrl": "https:\u002F\u002Fs1-11673.kwimgs.com\u002Fkos\u002Fnlav11673\u002Fui-config\u002Ftopbar-search.svg"
+                            },
+                            "rightItemConfig": {
+                                "defaultState": {
+                                    "fontColor": "rgb(255,195,195)",
+                                    "fontWeight": 500
+                                },
+                                "hoverState": {
+                                    "fontColor": "rgb(255,255,255)",
+                                    "fontWeight": 500
+                                }
+                            },
+                            "login": {
+                                "loginButtonBackground": "rgb(255, 240, 240)",
+                                "loginButtonTextColor": "rgb(224,56,56)"
+                            },
+                            "subList": {
+                                "background": "rgb(255, 240, 240)",
+                                "arrowIcon": "https:\u002F\u002Fs1-11673.kwimgs.com\u002Fkos\u002Fnlav11673\u002Fui-config\u002Farrow-down.svg",
+                                "textState": {
+                                    "defaultState": {
+                                        "fontColor": "rgba(205,60,56,0.7)",
+                                        "fontWeight": 500
+                                    },
+                                    "hoverState": {
+                                        "fontColor": "rgb(224,56,56)",
+                                        "fontWeight": 500
+                                    }
+                                }
+                            }
+                        },
+                        "navigationBar": {
+                            "background": "rgb(255,240,240)",
+                            "textState": {
+                                "defaultState": {
+                                    "fontColor": "rgba(205,60,56,0.7)",
+                                    "fontWeight": 500
+                                },
+                                "hoverState": {
+                                    "fontColor": "rgb(224,56,56)",
+                                    "fontWeight": 500
+                                }
+                            },
+                            "activedLineColor": "rgb(224,56,56)"
+                        },
+                        "footer": {
+                            "logoImgUrl": "https:\u002F\u002Fs1-11673.kwimgs.com\u002Fkos\u002Fnlav11673\u002Fui-config\u002Ffooter-logo.png",
+                            "background": "rgb(224,56,56)",
+                            "titleColor": "rgba(255, 195, 195, 0.7)",
+                            "titleFontWeight": 500,
+                            "linkColor": "rgba(255, 195, 195, 0.4)",
+                            "linkFontWeight": 400,
+                            "textState": {
+                                "defaultState": {
+                                    "fontColor": "rgb(255, 195, 195)",
+                                    "fontWeight": 500
+                                },
+                                "hoverState": {
+                                    "fontColor": "rgb(255,255,255)",
+                                    "fontWeight": 500
+                                }
+                            }
+                        },
+                        "openGrayPage": false
+                    }
+                }
+            }
+        },
+        "visionStartup": {
+            "type": "json",
+            "json": {
+                "result": 1,
+                "loginBannerConfig": [],
+                "linkTarget": true,
+                "loadHome": false,
+                "loginBanner": "https:\u002F\u002Fp2-pro.a.yximgs.com\u002Fkos\u002Fnlav111633\u002Fpc\u002Flogin\u002FloginBanner.png",
+                "loginGuideStrategy": {
+                    "dailyTimesLimit": 0,
+                    "stayTimeLimit": 0,
+                    "playTimeLimit": 0,
+                    "playCountLimit": 0,
+                    "open": false,
+                    "effectPages": ["find", "search", "hashtag", "hotrank", "brilliant", "profile", "theater", "samecity"]
+                },
+                "livingInfoConfig": 2,
+                "host-name": "public-bjx-c34-kce-node2279.idchb1az1.hb1.kwaidc.com",
+                "homeRecoAbTest": 1,
+                "refreshLogin": false,
+                "sid": "kuaishou.server.webday7"
+            }
+        },
+        "visionVideoDetail({\"page\":\"detail\",\"photoId\":\"3xgdh378bhb9pmc\"})": {
+            "type": "id",
+            "generated": true,
+            "id": "$ROOT_QUERY.visionVideoDetail({\"page\":\"detail\",\"photoId\":\"3xgdh378bhb9pmc\"})",
+            "typename": "VisionVideoDetail"
+        },
+        "visionConfig": {
+            "type": "id",
+            "generated": true,
+            "id": "$ROOT_QUERY.visionConfig",
+            "typename": "VisionConfigResult"
+        }
+    },
+    "$ROOT_QUERY.visionVideoDetail({\"page\":\"detail\",\"photoId\":\"3xgdh378bhb9pmc\"})": {
+        "status": 1,
+        "type": 1,
+        "author": {
+            "type": "id",
+            "generated": false,
+            "id": "VisionVideoDetailAuthor:3xntbfefrf9ij3a",
+            "typename": "VisionVideoDetailAuthor"
+        },
+        "photo": {
+            "type": "id",
+            "generated": false,
+            "id": "VisionVideoDetailPhoto:3xgdh378bhb9pmc",
+            "typename": "VisionVideoDetailPhoto"
+        },
+        "tags": [{
+            "type": "id",
+            "generated": true,
+            "id": "$ROOT_QUERY.visionVideoDetail({\"page\":\"detail\",\"photoId\":\"3xgdh378bhb9pmc\"}).tags.0",
+            "typename": "VisionVideoDetailTags"
+        }, {
+            "type": "id",
+            "generated": true,
+            "id": "$ROOT_QUERY.visionVideoDetail({\"page\":\"detail\",\"photoId\":\"3xgdh378bhb9pmc\"}).tags.1",
+            "typename": "VisionVideoDetailTags"
+        }, {
+            "type": "id",
+            "generated": true,
+            "id": "$ROOT_QUERY.visionVideoDetail({\"page\":\"detail\",\"photoId\":\"3xgdh378bhb9pmc\"}).tags.2",
+            "typename": "VisionVideoDetailTags"
+        }],
+        "commentLimit": {
+            "type": "id",
+            "generated": true,
+            "id": "$ROOT_QUERY.visionVideoDetail({\"page\":\"detail\",\"photoId\":\"3xgdh378bhb9pmc\"}).commentLimit",
+            "typename": "VisionCommentLimit"
+        },
+        "llsid": "2007770059114054849",
+        "danmakuSwitch": true,
+        "__typename": "VisionVideoDetail"
+    },
+    "VisionVideoDetailAuthor:3xntbfefrf9ij3a": {
+        "id": "3xntbfefrf9ij3a",
+        "name": "星思音乐",
+        "following": false,
+        "headerUrl": "https:\u002F\u002Fp66-pro.a.yximgs.com\u002Fuhead\u002FAB\u002F2023\u002F11\u002F15\u002F16\u002FBMjAyMzExMTUxNjE1MzdfMTkyNTM0NTUxMl8yX2hkODIzXzgyNw==_s.jpg",
+        "livingInfo": {
+            "type": "json",
+            "json": {
+                "living": false,
+                "livingId": null,
+                "iconType": 0
+            }
+        },
+        "__typename": "VisionVideoDetailAuthor"
+    },
+    "VisionVideoDetailPhoto:3xgdh378bhb9pmc": {
+        "id": "3xgdh378bhb9pmc",
+        "duration": 200066,
+        "caption": "萨顶顶《万物生》完整版#快手热门歌曲 #音乐 #万物生萨顶顶 @快手热点(O3xddgkd5fav5if9) @快手音乐(O3xjy3yfphyeczxm)",
+        "likeCount": "4483",
+        "realLikeCount": 4483,
+        "coverUrl": "https:\u002F\u002Fp2.a.yximgs.com\u002Fupic\u002F2024\u002F11\u002F27\u002F14\u002FBMjAyNDExMjcxNDMyMzVfMTkyNTM0NTUxMl8xNDk2ODk2ODMyNTBfMl8z_Bbd69dca1720b5ee2bfe2944f730de200.jpg?tag=1-1732960396-xpcwebdetail-0-yy7i0npzmr-a4fdbf2c2106e873&clientCacheKey=3xgdh378bhb9pmc.jpg&di=JAmJB5pL1Y3JEgykbqHdwg==&bp=10004",
+        "photoUrl": "https:\u002F\u002Fv1.kwaicdn.com\u002Fksc2\u002FwvS3wQvLga46l3hvEt9QUnYmx7J72XvnF-6zBzZHv-Bhm4xyYMl6XEKEnwtx7xAevHNr9X96K7Gnq1qPiYY2C664UjUvHlq6CnfQ0ePxbPSwZyodyix3COB0NMZ6BiFewarxiKI3sS8AX-Qu7fZ_sJK8fxwQRnuLLz9IfkBFrrvdEmZForSkdH6qoETonLU5.mp4?pkey=AAUN7zZBtKLs9rQXZJDyh5H_x5tNCSnu7MeE7W2STLWbb1QZ3YDxf-oXZCl8xwA74Y0MtYfSGU2kNgXHqzCZIcMAyZMhdwpzpGPptSsIIRMRbh0SYTyjPN5grPXLdqO7A0E&tag=1-1732960396-unknown-0-szahuhk9bn-f4080a49fc364be7&clientCacheKey=3xgdh378bhb9pmc_b.mp4&di=JAmJB5pL1Y3JEgykbqHdwg==&bp=10004&tt=b&ss=vp",
+        "liked": false,
+        "timestamp": 1732689195327,
+        "expTag": "1_a\u002F2007770059114054849_xpcwebdetailxxnull0",
+        "llsid": null,
+        "viewCount": "25.4万",
+        "videoRatio": 0.4838709677419355,
+        "stereoType": 0,
+        "musicBlocked": null,
+        "riskTagContent": null,
+        "riskTagUrl": null,
+        "manifest": {
+            "type": "id",
+            "generated": true,
+            "id": "$VisionVideoDetailPhoto:3xgdh378bhb9pmc.manifest",
+            "typename": "VisionVideoManifest"
+        },
+        "manifestH265": {
+            "type": "json",
+            "json": {
+                "version": "1.0.0",
+                "businessType": 2,
+                "mediaType": 2,
+                "videoId": "8e9c43f73c56cec8",
+                "hideAuto": false,
+                "manualDefaultSelect": false,
+                "stereoType": 0,
+                "adaptationSet": [{
+                    "id": 1,
+                    "duration": 200066,
+                    "representation": [{
+                        "id": 1,
+                        "url": "https:\u002F\u002Fv2.kwaicdn.com\u002Fksc2\u002FeidIchtZs3WnJiXRS2dwZYEjjSsgoj6TfC7wtHMpYRsKrZTw2TJeq0T15fP6PKVRS36XGVtOVGc_uDrK7stErPzsFoMBnsUTBf3mzGml2K_LxaLBv1_t7XsUFCLFyMyF.mp4?pkey=AAWTcMlD4RAhP1UygnClbqrEojAMUA-VKHsCvrGYjT8NZlR6VBvTIzWBRU5GVfIoe_C78rsOLbrLptBzJbPKNwOxLNMy0aC0YuJrUyNy5FYp8BcB0vXG-AEXN0A_ySaSIG4&tag=1-1732960396-unknown-0-5im2zlofnf-09552be1ba624f85&clientCacheKey=3xgdh378bhb9pmc_463759e1&di=JAmJB5pL1Y3JEgykbqHdwg==&bp=10004&tt=hd15&ss=vp",
+                        "backupUrl": ["https:\u002F\u002Fv2.kwaicdn.com\u002Fksc2\u002FeidIchtZs3WnJiXRS2dwZYEjjSsgoj6TfC7wtHMpYRsKrZTw2TJeq0T15fP6PKVRS36XGVtOVGc_uDrK7stErPzsFoMBnsUTBf3mzGml2K_LxaLBv1_t7XsUFCLFyMyF.mp4?pkey=AAXN2C9nebpjvq2_sVkE8vIS65CG3xoxdR7xYkflbg9gi6xTgBAcAYk670dP35QCbdJ-fPiAgFWEp5bUme6gGk1QQAuHNfTVP9SK9a3gz5kFPaKjf1QJ8wGBVBz5wA1Gj1g&tag=1-1732960396-unknown-1-kscsm5ljzm-d5715b663b8e0514&clientCacheKey=3xgdh378bhb9pmc_463759e1&di=JAmJB5pL1Y3JEgykbqHdwg==&bp=10004&tt=hd15&ss=vp"],
+                        "maxBitrate": 2000,
+                        "avgBitrate": 670,
+                        "width": 720,
+                        "height": 1490,
+                        "frameRate": 29.985012,
+                        "quality": 1.5,
+                        "kvqScore": {
+                            "FR": 3.249804735183716,
+                            "NR": 3.4033203125,
+                            "FRPost": 0,
+                            "NRPost": 3.5524
+                        },
+                        "qualityType": "720p",
+                        "qualityLabel": "高清",
+                        "featureP2sp": false,
+                        "p2spCode": "{\"fRsn\":0,\"fixOpt\":-1,\"schTask\":\"\",\"schCode\":-1,\"schRes\":\"\",\"pushTask\":\"v=0&p=0&s=0&d=0\",\"pushCode\":-1}",
+                        "hidden": false,
+                        "disableAdaptive": false,
+                        "defaultSelect": false,
+                        "comment": "videoId=8e9c43f73c56cec8\u002FttExplain=HEVC_Turbo2_720P_高码率\u002Ftt=hd15",
+                        "hdrType": 0,
+                        "fileSize": 16778334
+                    }]
+                }],
+                "playInfo": {
+                    "cdnTimeRangeLevel": 0
+                },
+                "videoFeature": {
+                    "blurProbability": 0.23125000298023224,
+                    "blockyProbability": 0.2729700207710266,
+                    "avgEntropy": 7.5748433589935305,
+                    "mosScore": 0.6339518427848816
+                }
+            }
+        },
+        "photoH265Url": "https:\u002F\u002Fv2.kwaicdn.com\u002Fksc2\u002FeidIchtZs3WnJiXRS2dwZYEjjSsgoj6TfC7wtHMpYRsKrZTw2TJeq0T15fP6PKVRS36XGVtOVGc_uDrK7stErPzsFoMBnsUTBf3mzGml2K_LxaLBv1_t7XsUFCLFyMyF.mp4?pkey=AAWtDawVTsMSVx9gk3anma0NpPtSBnyCIt07qxj3lHHpISPJRPtIH14y8ajyPpkeRRl5pPpqfa55kIbLVUmZJywczMnoeGovabBlc_wd0WFdjKvbCKZdmKZHbxnhm-NVmlk&tag=1-1732960396-unknown-0-hapkcdrpti-3c9e95eee3a51385&clientCacheKey=3xgdh378bhb9pmc_463759e1&di=JAmJB5pL1Y3JEgykbqHdwg==&bp=10004&tt=hd15&ss=vp",
+        "coronaCropManifest": null,
+        "coronaCropManifestH265": null,
+        "croppedPhotoH265Url": "",
+        "croppedPhotoUrl": "",
+        "videoResource": {
+            "type": "json",
+            "json": {
+                "h264": {
+                    "version": "1.0.0",
+                    "businessType": 1,
+                    "mediaType": 1,
+                    "videoId": "8e9c43f73c56cec8",
+                    "hideAuto": false,
+                    "manualDefaultSelect": false,
+                    "stereoType": 0,
+                    "adaptationSet": [{
+                        "id": 1,
+                        "duration": 200066,
+                        "representation": [{
+                            "id": 1,
+                            "url": "https:\u002F\u002Fv2-zj-hbcm.kwaicdn.com\u002Fbs3\u002Fvideo-hls\u002F5223894242016641526_hlsb.m3u8?ftt=R&Aecs=172.17.4.238&ocid=100000620&ss=vp",
+                            "backupUrl": ["https:\u002F\u002Fv5-ot-vod.kwaicdn.com\u002Fbs3\u002Fvideo-hls\u002F5223894242016641526_hlsb.m3u8?ftt=R&pkey=AAWK4WIyMv8qkg4w_lIJDOFaic1QHaIOevjYVfQhL9pJZo8GcN7cislUitytFRham5FIwA_7h6-sullTCd1BJIqDNSlPmqOBmAKIF6ev4it2YBiuQyHLXNb0KjaPVO25uNQ&ss=vp"],
+                            "m3u8Slice": "#EXTM3U\n#EXT-X-VERSION:3\n#EXT-X-TARGETDURATION:8\n#EXT-X-MEDIA-SEQUENCE:0\n#EXTINF:8.333333,\nhttps:\u002F\u002Fv2-zj-hbcm.kwaicdn.com\u002Fbs3\u002Fvideo-hls\u002F5223894242016641526_hlsb.00000.ts?ftt=R&Aecs=172.17.4.238&ocid=100000620&ss=vp\n",
+                            "maxBitrate": 3300,
+                            "avgBitrate": 921,
+                            "codecs": "",
+                            "width": 720,
+                            "height": 1488,
+                            "frameRate": 30,
+                            "quality": 1.5,
+                            "kvqScore": {
+                                "FR": 4.302734375,
+                                "NR": 3.4049479961395264,
+                                "FRPost": -1,
+                                "NRPost": -1
+                            },
+                            "qualityType": "720p",
+                            "qualityLabel": "高清",
+                            "featureP2sp": false,
+                            "p2spCode": "{\"fRsn\":0,\"fixOpt\":-1,\"schTask\":\"\",\"schCode\":-1,\"schRes\":\"\",\"pushTask\":\"v=0&p=0&s=0&d=0\",\"pushCode\":-1}",
+                            "hidden": false,
+                            "disableAdaptive": false,
+                            "defaultSelect": false,
+                            "comment": "videoId=8e9c43f73c56cec8\u002Ftt=hlsb",
+                            "hdrType": 0
+                        }]
+                    }],
+                    "playInfo": {
+                        "cdnTimeRangeLevel": 0
+                    },
+                    "videoFeature": {
+                        "blurProbability": 0.23125000298023224,
+                        "blockyProbability": 0.2729700207710266,
+                        "avgEntropy": 7.5748433589935305,
+                        "mosScore": 0.6339518427848816
+                    }
+                },
+                "hevc": {
+                    "version": "1.0.0",
+                    "businessType": 2,
+                    "mediaType": 2,
+                    "videoId": "8e9c43f73c56cec8",
+                    "hideAuto": false,
+                    "manualDefaultSelect": false,
+                    "stereoType": 0,
+                    "adaptationSet": [{
+                        "id": 1,
+                        "duration": 200066,
+                        "representation": [{
+                            "id": 1,
+                            "url": "https:\u002F\u002Fv2.kwaicdn.com\u002Fksc2\u002FeidIchtZs3WnJiXRS2dwZYEjjSsgoj6TfC7wtHMpYRsKrZTw2TJeq0T15fP6PKVRS36XGVtOVGc_uDrK7stErPzsFoMBnsUTBf3mzGml2K_LxaLBv1_t7XsUFCLFyMyF.mp4?pkey=AAWTcMlD4RAhP1UygnClbqrEojAMUA-VKHsCvrGYjT8NZlR6VBvTIzWBRU5GVfIoe_C78rsOLbrLptBzJbPKNwOxLNMy0aC0YuJrUyNy5FYp8BcB0vXG-AEXN0A_ySaSIG4&tag=1-1732960396-unknown-0-5im2zlofnf-09552be1ba624f85&clientCacheKey=3xgdh378bhb9pmc_463759e1&di=JAmJB5pL1Y3JEgykbqHdwg==&bp=10004&tt=hd15&ss=vp",
+                            "backupUrl": ["https:\u002F\u002Fv2.kwaicdn.com\u002Fksc2\u002FeidIchtZs3WnJiXRS2dwZYEjjSsgoj6TfC7wtHMpYRsKrZTw2TJeq0T15fP6PKVRS36XGVtOVGc_uDrK7stErPzsFoMBnsUTBf3mzGml2K_LxaLBv1_t7XsUFCLFyMyF.mp4?pkey=AAXN2C9nebpjvq2_sVkE8vIS65CG3xoxdR7xYkflbg9gi6xTgBAcAYk670dP35QCbdJ-fPiAgFWEp5bUme6gGk1QQAuHNfTVP9SK9a3gz5kFPaKjf1QJ8wGBVBz5wA1Gj1g&tag=1-1732960396-unknown-1-kscsm5ljzm-d5715b663b8e0514&clientCacheKey=3xgdh378bhb9pmc_463759e1&di=JAmJB5pL1Y3JEgykbqHdwg==&bp=10004&tt=hd15&ss=vp"],
+                            "maxBitrate": 2000,
+                            "avgBitrate": 670,
+                            "width": 720,
+                            "height": 1490,
+                            "frameRate": 29.985012,
+                            "quality": 1.5,
+                            "kvqScore": {
+                                "FR": 3.249804735183716,
+                                "NR": 3.4033203125,
+                                "FRPost": 0,
+                                "NRPost": 3.5524
+                            },
+                            "qualityType": "720p",
+                            "qualityLabel": "高清",
+                            "featureP2sp": false,
+                            "p2spCode": "{\"fRsn\":0,\"fixOpt\":-1,\"schTask\":\"\",\"schCode\":-1,\"schRes\":\"\",\"pushTask\":\"v=0&p=0&s=0&d=0\",\"pushCode\":-1}",
+                            "hidden": false,
+                            "disableAdaptive": false,
+                            "defaultSelect": false,
+                            "comment": "videoId=8e9c43f73c56cec8\u002FttExplain=HEVC_Turbo2_720P_高码率\u002Ftt=hd15",
+                            "hdrType": 0,
+                            "fileSize": 16778334
+                        }]
+                    }],
+                    "playInfo": {
+                        "cdnTimeRangeLevel": 0
+                    },
+                    "videoFeature": {
+                        "blurProbability": 0.23125000298023224,
+                        "blockyProbability": 0.2729700207710266,
+                        "avgEntropy": 7.5748433589935305,
+                        "mosScore": 0.6339518427848816
+                    }
+                }
+            }
+        },
+        "__typename": "VisionVideoDetailPhoto"
+    },
+    "$VisionVideoDetailPhoto:3xgdh378bhb9pmc.manifest": {
+        "mediaType": 1,
+        "businessType": 1,
+        "version": "1.0.0",
+        "adaptationSet": [{
+            "type": "id",
+            "generated": false,
+            "id": "VisionVideoAdaptationSet:1",
+            "typename": "VisionVideoAdaptationSet"
+        }],
+        "__typename": "VisionVideoManifest"
+    },
+    "VisionVideoAdaptationSet:1": {
+        "id": 1,
+        "duration": 200066,
+        "representation": [{
+            "type": "id",
+            "generated": false,
+            "id": "VisionVideoSetRepresentation:1",
+            "typename": "VisionVideoSetRepresentation"
+        }],
+        "__typename": "VisionVideoAdaptationSet"
+    },
+    "VisionVideoSetRepresentation:1": {
+        "id": 1,
+        "defaultSelect": false,
+        "backupUrl": {
+            "type": "json",
+            "json": ["https:\u002F\u002Fv5-ot-vod.kwaicdn.com\u002Fbs3\u002Fvideo-hls\u002F5223894242016641526_hlsb.m3u8?ftt=R&pkey=AAWK4WIyMv8qkg4w_lIJDOFaic1QHaIOevjYVfQhL9pJZo8GcN7cislUitytFRham5FIwA_7h6-sullTCd1BJIqDNSlPmqOBmAKIF6ev4it2YBiuQyHLXNb0KjaPVO25uNQ&ss=vp"]
+        },
+        "codecs": "",
+        "url": "https:\u002F\u002Fv2-zj-hbcm.kwaicdn.com\u002Fbs3\u002Fvideo-hls\u002F5223894242016641526_hlsb.m3u8?ftt=R&Aecs=172.17.4.238&ocid=100000620&ss=vp",
+        "height": 1488,
+        "width": 720,
+        "avgBitrate": 921,
+        "maxBitrate": 3300,
+        "m3u8Slice": "#EXTM3U\n#EXT-X-VERSION:3\n#EXT-X-TARGETDURATION:8\n#EXT-X-MEDIA-SEQUENCE:0\n#EXTINF:8.333333,\nhttps:\u002F\u002Fv2-zj-hbcm.kwaicdn.com\u002Fbs3\u002Fvideo-hls\u002F5223894242016641526_hlsb.00000.ts?ftt=R&Aecs=172.17.4.238&ocid=100000620&ss=vp\n",
+        "qualityType": "720p",
+        "qualityLabel": "高清",
+        "frameRate": 30,
+        "featureP2sp": false,
+        "hidden": false,
+        "disableAdaptive": false,
+        "__typename": "VisionVideoSetRepresentation"
+    },
+    "$ROOT_QUERY.visionVideoDetail({\"page\":\"detail\",\"photoId\":\"3xgdh378bhb9pmc\"}).tags.0": {
+        "type": "1",
+        "name": "万物生萨顶顶",
+        "__typename": "VisionVideoDetailTags"
+    },
+    "$ROOT_QUERY.visionVideoDetail({\"page\":\"detail\",\"photoId\":\"3xgdh378bhb9pmc\"}).tags.1": {
+        "type": "1",
+        "name": "快手热门歌曲",
+        "__typename": "VisionVideoDetailTags"
+    },
+    "$ROOT_QUERY.visionVideoDetail({\"page\":\"detail\",\"photoId\":\"3xgdh378bhb9pmc\"}).tags.2": {
+        "type": "1",
+        "name": "音乐",
+        "__typename": "VisionVideoDetailTags"
+    },
+    "$ROOT_QUERY.visionVideoDetail({\"page\":\"detail\",\"photoId\":\"3xgdh378bhb9pmc\"}).commentLimit": {
+        "canAddComment": 0,
+        "__typename": "VisionCommentLimit"
+    },
+    "$ROOT_QUERY.visionConfig.coronaTabs.0": {
+        "tabId": 0,
+        "name": "推荐",
+        "folded": false,
+        "selected": true,
+        "__typename": "VisionTab"
+    },
+    "$ROOT_QUERY.visionConfig.coronaTabs.1": {
+        "tabId": 1,
+        "name": "影视",
+        "folded": false,
+        "selected": false,
+        "__typename": "VisionTab"
+    },
+    "$ROOT_QUERY.visionConfig.coronaTabs.2": {
+        "tabId": 8,
+        "name": "动漫",
+        "folded": false,
+        "selected": false,
+        "__typename": "VisionTab"
+    },
+    "$ROOT_QUERY.visionConfig.coronaTabs.3": {
+        "tabId": 7,
+        "name": "美食",
+        "folded": false,
+        "selected": false,
+        "__typename": "VisionTab"
+    },
+    "$ROOT_QUERY.visionConfig.coronaTabs.4": {
+        "tabId": 5,
+        "name": "游戏",
+        "folded": false,
+        "selected": false,
+        "__typename": "VisionTab"
+    },
+    "$ROOT_QUERY.visionConfig.coronaTabs.5": {
+        "tabId": 3,
+        "name": "音乐",
+        "folded": false,
+        "selected": false,
+        "__typename": "VisionTab"
+    },
+    "$ROOT_QUERY.visionConfig": {
+        "coronaTabs": [{
+            "type": "id",
+            "generated": true,
+            "id": "$ROOT_QUERY.visionConfig.coronaTabs.0",
+            "typename": "VisionTab"
+        }, {
+            "type": "id",
+            "generated": true,
+            "id": "$ROOT_QUERY.visionConfig.coronaTabs.1",
+            "typename": "VisionTab"
+        }, {
+            "type": "id",
+            "generated": true,
+            "id": "$ROOT_QUERY.visionConfig.coronaTabs.2",
+            "typename": "VisionTab"
+        }, {
+            "type": "id",
+            "generated": true,
+            "id": "$ROOT_QUERY.visionConfig.coronaTabs.3",
+            "typename": "VisionTab"
+        }, {
+            "type": "id",
+            "generated": true,
+            "id": "$ROOT_QUERY.visionConfig.coronaTabs.4",
+            "typename": "VisionTab"
+        }, {
+            "type": "id",
+            "generated": true,
+            "id": "$ROOT_QUERY.visionConfig.coronaTabs.5",
+            "typename": "VisionTab"
+        }],
+        "tubeTabs": [{
+            "type": "id",
+            "generated": true,
+            "id": "$ROOT_QUERY.visionConfig.tubeTabs.0",
+            "typename": "VisionTab"
+        }, {
+            "type": "id",
+            "generated": true,
+            "id": "$ROOT_QUERY.visionConfig.tubeTabs.1",
+            "typename": "VisionTab"
+        }],
+        "banners": [{
+            "type": "id",
+            "generated": false,
+            "id": "Banner:1",
+            "typename": "Banner"
+        }, {
+            "type": "id",
+            "generated": false,
+            "id": "Banner:6",
+            "typename": "Banner"
+        }],
+        "movieTagTypes": [{
+            "type": "id",
+            "generated": true,
+            "id": "$ROOT_QUERY.visionConfig.movieTagTypes.0",
+            "typename": "movieTag"
+        }],
+        "disabledModules": {
+            "type": "json",
+            "json": ["movie", "corona", "olympic", "parisOly", "olympic", "parisOly"]
+        },
+        "homeModuleOrder": {
+            "type": "json",
+            "json": [{
+                "name": "live",
+                "title": "热门直播",
+                "order": 1,
+                "showMore": true,
+                "checkLogin": true,
+                "clickTarget": "https:\u002F\u002Flive.kuaishou.com",
+                "startTime": null,
+                "endTime": null
+            }, {
+                "name": "brilliant",
+                "title": "精彩短视频",
+                "order": 2,
+                "showMore": true,
+                "checkLogin": false,
+                "clickTarget": "\u002Fbrilliant",
+                "startTime": null,
+                "endTime": null
+            }, {
+                "name": "hotRanks",
+                "title": "快手热榜",
+                "order": 2,
+                "showMore": false,
+                "checkLogin": false,
+                "clickTarget": "",
+                "startTime": null,
+                "endTime": null
+            }, {
+                "name": "nearby",
+                "title": "快手同城",
+                "order": 3,
+                "showMore": true,
+                "checkLogin": false,
+                "clickTarget": "\u002Fsamecity",
+                "startTime": null,
+                "endTime": null
+            }, {
+                "name": "theater",
+                "title": "小剧场",
+                "order": 4,
+                "showMore": true,
+                "checkLogin": false,
+                "clickTarget": "\u002Ftheater\u002F0",
+                "startTime": null,
+                "endTime": null
+            }, {
+                "name": "acfun",
+                "title": "AcFun",
+                "order": 5,
+                "showMore": true,
+                "checkLogin": false,
+                "clickTarget": "https:\u002F\u002Fwww.acfun.cn\u002F",
+                "startTime": null,
+                "endTime": null
+            }]
+        },
+        "__typename": "VisionConfigResult"
+    },
+    "$ROOT_QUERY.visionConfig.tubeTabs.0": {
+        "tabId": 0,
+        "name": "精选",
+        "folded": false,
+        "selected": true,
+        "subTabs": [],
+        "__typename": "VisionTab"
+    },
+    "$ROOT_QUERY.visionConfig.tubeTabs.1": {
+        "tabId": 10000,
+        "name": "短剧",
+        "folded": false,
+        "selected": false,
+        "subTabs": [{
+            "type": "id",
+            "generated": true,
+            "id": "$ROOT_QUERY.visionConfig.tubeTabs.1.subTabs.0",
+            "typename": "SubTab"
+        }],
+        "__typename": "VisionTab"
+    },
+    "$ROOT_QUERY.visionConfig.tubeTabs.1.subTabs.0": {
+        "subTabId": 10005,
+        "subTabName": "短片",
+        "__typename": "SubTab"
+    },
+    "Banner:1": {
+        "id": 1,
+        "landingUrl": "https:\u002F\u002Flive.kuaishou.com\u002Fu\u002FqqspeedS",
+        "imageUrl": "https:\u002F\u002Fs2-111422.kwimgs.com\u002Fkos\u002Fnlav111422\u002Fks-web\u002Factivity\u002FQQcar\u002F1732607434813.png",
+        "checkLogin": true,
+        "openInNewTab": null,
+        "__typename": "Banner"
+    },
+    "Banner:6": {
+        "id": 6,
+        "landingUrl": "",
+        "imageUrl": "https:\u002F\u002Fs2-10623.kwimgs.com\u002Fkos\u002Fnlav10623\u002Fvision_images\u002FtopBannerx1.png",
+        "checkLogin": false,
+        "openInNewTab": null,
+        "__typename": "Banner"
+    },
+    "$ROOT_QUERY.visionConfig.movieTagTypes.0": {
+        "movieTagType": "movieType",
+        "movieTagValues": {
+            "type": "json",
+            "json": ["喜剧", "动作", "爱情", "悬疑", "剧情"]
+        },
+        "__typename": "movieTag"
+    }
+},
+"clients": {}
+}
