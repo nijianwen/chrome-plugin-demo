@@ -47,12 +47,7 @@ chrome.contextMenus.create({
 	});
 })();*/
 
-// 监听来自content-script的消息
-chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
-    console.log('收到来自content-script的消息：');
-    console.log(request, sender, sendResponse);
-    sendResponse('我是后台，我已收到你的消息：' + JSON.stringify(request));
-});
+
 
 $('#test_cors').click((e) => {
     $.get('https://www.baidu.com', function(html) {
@@ -137,59 +132,77 @@ chrome.storage.sync.get({ showImage: true }, function(items) {
     showImage = items.showImage;
 });
 // web请求监听，最后一个参数表示阻塞式，需单独声明权限：webRequestBlocking
-chrome.webRequest.onBeforeRequest.addListener(details => {
-    // cancel 表示取消本次请求
-    if (!showImage && details.type == 'image') return { cancel: true };
-    // 简单的音视频检测
-    // 大部分网站视频的type并不是media，且视频做了防下载处理，所以这里仅仅是为了演示效果，无实际意义
-    if (details.type == 'media') {
-        // chrome.notifications.create(null, {
-        // 	type: 'basic',
-        // 	iconUrl: 'img/icon.png',
-        // 	title: '检测到音视频',
-        // 	message: '音视频地址：' + details.url,
-        // });
-        // 使用示例：下载某个URL的文件，并指定文件名
-        let urlTemp = new URL(details.url);
-        let pathNameArray = urlTemp.pathname.split('/');
-        let fileName = pathNameArray[pathNameArray.length-1];
-        
-        console.log(details.type, details.url,fileName)
-        // downloadFile(details.url,fileName);
+// chrome.webRequest.onBeforeRequest.addListener(details => {
+//     // cancel 表示取消本次请求
+//     if (!showImage && details.type == 'image') return { cancel: true };
+//     // 简单的音视频检测
+//     // 大部分网站视频的type并不是media，且视频做了防下载处理，所以这里仅仅是为了演示效果，无实际意义
+//     if (details.type == 'media') {
+//         // chrome.notifications.create(null, {
+//         // 	type: 'basic',
+//         // 	iconUrl: 'img/icon.png',
+//         // 	title: '检测到音视频',
+//         // 	message: '音视频地址：' + details.url,
+//         // });
+//         // 使用示例：下载某个URL的文件，并指定文件名
+//         let urlTemp = new URL(details.url);
+//         let pathNameArray = urlTemp.pathname.split('/');
+//         let fileName = pathNameArray[pathNameArray.length - 1];
 
-    }
-    if (details.url.indexOf('.m3u8') > 0) {
-        // alert(details.type + '---' + details.url)
-    }
-    // if(details.type == 'h2') {
-    // chrome.notifications.create(null, {
-    // 	type: 'basic',
-    // 	iconUrl: 'img/icon.png',
-    // 	title: '检测到音视频',
-    // 	message: '音视频地址：' + details.url,
-    // });
-    // alert(details.type+'---'+details.url)
-    // }
-}, { urls: ["<all_urls>"] }, ["blocking"]);
+//         // console.log(details.type, details.url, fileName)
+//         // aTagdownloadFile(details.url, fileName);
+//         chromeDownloadFile(details.url, fileName);
+//     }
+//     if (details.url.indexOf('.m3u8') > 0) {
+//         // alert(details.type + '---' + details.url)
+//     }
+//     // if(details.type == 'h2') {
+//     // chrome.notifications.create(null, {
+//     // 	type: 'basic',
+//     // 	iconUrl: 'img/icon.png',
+//     // 	title: '检测到音视频',
+//     // 	message: '音视频地址：' + details.url,
+//     // });
+//     // alert(details.type+'---'+details.url)
+//     // }
+// }, { urls: ["<all_urls>"] }, ["blocking"]);
 
-chrome.webRequest.onCompleted.addListener(completed => {
-    if (completed.url.indexOf('.m3u8') > 0) {
-        console.log(completed)
-    }
-}, { urls: ["<all_urls>"] });
-
-function downloadFile(url, filename) {
-    if(filename in downList){
-        console.log(url,filename,'已经下载过了',downList)
-    }else{
-        downList[filename]=1;
+function aTagdownloadFile(url, filename) {
+    if (filename in downList) {
+        console.log(url, filename, 'aTagdownloadFile已经下载过了', downList)
+    } else {
+        downList[filename] = 1;
     }
     // 创建一个不可见的<a>元素
     var elem = window.document.createElement('a');
     elem.href = url;
     elem.download = filename; // 设置下载的文件名
+    elem.target = '_blank';
     document.body.appendChild(elem);
     elem.click(); // 模拟点击以开始下载
     document.body.removeChild(elem); // 下载完成后移除元素
 }
+
+function chromeDownloadFile(url, filename) {
+    if (filename in downList) {
+        console.log(url, filename, 'chromeDownloadFile已经下载过了', downList)
+    } else {
+        downList[filename] = 1;
+    }
+    chrome.downloads.download({
+        url: url,
+        filename: filename, // 可选，如果不提供，浏览器将尝试从URL推断文件名
+        saveAs: false, // 如果设置为true，将提示用户选择保存位置
+    }, function(downloadId) {
+        console.log('Download started:', downloadId);
+    });
+}
 var downList = {};
+
+
+// 监听来自content-script的消息
+chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
+    console.log('收到来自content-script的消息：');
+    console.log(request, sender, sendResponse);
+    sendResponse('我是后台，我已收到你的消息111：' + JSON.stringify(request));
+});
