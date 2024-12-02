@@ -170,6 +170,7 @@ chrome.storage.sync.get({ showImage: true }, function(items) {
 function aTagdownloadFile(url, filename) {
     if (filename in downList) {
         console.log(url, filename, 'aTagdownloadFile已经下载过了', downList)
+        return;
     } else {
         downList[filename] = 1;
     }
@@ -183,9 +184,12 @@ function aTagdownloadFile(url, filename) {
     document.body.removeChild(elem); // 下载完成后移除元素
 }
 
-function chromeDownloadFile(url, filename) {
+function chromeDownloadFile(url, filename, suffix) {
+    console.log('chromeDownloadFile已经下载过了', url, filename, suffix);
+    filename = filename + suffix;
     if (filename in downList) {
         console.log(url, filename, 'chromeDownloadFile已经下载过了', downList)
+        return;
     } else {
         downList[filename] = 1;
     }
@@ -202,7 +206,7 @@ var downList = {};
 
 // 监听来自content-script的消息
 chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
-    console.log('收到来自content-script的消息：');
-    console.log(request, sender, sendResponse);
-    sendResponse('我是后台，我已收到你的消息111：' + JSON.stringify(request));
+    console.log('收到来自content-script的消息：', request, sender, sendResponse);
+    chromeDownloadFile(request.photoUrl, request.photoId, request.suffix);
+    // sendResponse('我是后台，我已收到你的消息111：' + JSON.stringify(request));
 });

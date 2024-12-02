@@ -5,65 +5,65 @@ document.addEventListener('DOMContentLoaded', function() {
     // 注入自定义JS
     injectCustomJs();
     // 给谷歌搜索结果的超链接增加 _target="blank"
-    if (location.host == 'www.google.com.tw') {
-        var objs = document.querySelectorAll('h3.r a');
-        for (var i = 0; i < objs.length; i++) {
-            objs[i].setAttribute('_target', 'blank');
-        }
-        console.log('已处理谷歌超链接！');
-    } else if (location.host == 'www.baidu.com') {
-        function fuckBaiduAD() {
-            if (document.getElementById('my_custom_css')) return;
-            var temp = document.createElement('style');
-            temp.id = 'my_custom_css';
-            (document.head || document.body).appendChild(temp);
-            var css = `
-			/* 移除百度右侧广告 */
-			#content_right{display:none;}
-			/* 覆盖整个屏幕的相关推荐 */
-			.rrecom-btn-parent{display:none;}'
-			/* 难看的按钮 */
-			.result-op.xpath-log{display:none !important;}`;
-            temp.innerHTML = css;
-            console.log('已注入自定义CSS！');
-            // 屏蔽百度推广信息
-            removeAdByJs();
-            // 这种必须用JS移除的广告一般会有延迟，干脆每隔一段时间清楚一次
-            interval = setInterval(removeAdByJs, 2000);
+    // if (location.host == 'www.google.com.tw') {
+    //     var objs = document.querySelectorAll('h3.r a');
+    //     for (var i = 0; i < objs.length; i++) {
+    //         objs[i].setAttribute('_target', 'blank');
+    //     }
+    //     console.log('已处理谷歌超链接！');
+    // } else if (location.host == 'www.baidu.com') {
+    //     function fuckBaiduAD() {
+    //         if (document.getElementById('my_custom_css')) return;
+    //         var temp = document.createElement('style');
+    //         temp.id = 'my_custom_css';
+    //         (document.head || document.body).appendChild(temp);
+    //         var css = `
+    // 		/* 移除百度右侧广告 */
+    // 		#content_right{display:none;}
+    // 		/* 覆盖整个屏幕的相关推荐 */
+    // 		.rrecom-btn-parent{display:none;}'
+    // 		/* 难看的按钮 */
+    // 		.result-op.xpath-log{display:none !important;}`;
+    //         temp.innerHTML = css;
+    //         console.log('已注入自定义CSS！');
+    //         // 屏蔽百度推广信息
+    //         removeAdByJs();
+    //         // 这种必须用JS移除的广告一般会有延迟，干脆每隔一段时间清楚一次
+    //         interval = setInterval(removeAdByJs, 2000);
 
-            // 重新搜索时页面不会刷新，但是被注入的style会被移除，所以需要重新执行
-            temp.addEventListener('DOMNodeRemoved', function(e) {
-                console.log('自定义CSS被移除，重新注入！');
-                if (interval) clearInterval(interval);
-                fuckBaiduAD();
-            });
-        }
-        let interval = 0;
+    //         // 重新搜索时页面不会刷新，但是被注入的style会被移除，所以需要重新执行
+    //         temp.addEventListener('DOMNodeRemoved', function(e) {
+    //             console.log('自定义CSS被移除，重新注入！');
+    //             if (interval) clearInterval(interval);
+    //             fuckBaiduAD();
+    //         });
+    //     }
+    //     let interval = 0;
 
-        function removeAdByJs() {
-            $('[data-tuiguang]').parents('[data-click]').remove();
-        }
-        fuckBaiduAD();
-        initCustomPanel();
-        initCustomEventListen();
-    }
+    //     function removeAdByJs() {
+    //         $('[data-tuiguang]').parents('[data-click]').remove();
+    //     }
+    //     fuckBaiduAD();
+    //     initCustomPanel();
+    //     initCustomEventListen();
+    // }
 });
 
-function initCustomPanel() {
-    var panel = document.createElement('div');
-    panel.className = 'chrome-plugin-demo-panel';
-    panel.innerHTML = `
-		<h2>injected-script操作content-script演示区：</h2>
-		<div class="btn-area">
-			<a href="javascript:sendMessageToContentScriptByPostMessage('你好，我是普通页面！')">通过postMessage发送消息给content-script</a><br>
-			<a href="javascript:sendMessageToContentScriptByEvent('你好啊！我是通过DOM事件发送的消息！')">通过DOM事件发送消息给content-script</a><br>
-			<a href="javascript:invokeContentScript('sendMessageToBackground()')">发送消息到后台或者popup</a><br>
-		</div>
-		<div id="my_custom_log">
-		</div>
-	`;
-    document.body.appendChild(panel);
-}
+// function initCustomPanel() {
+//     var panel = document.createElement('div');
+//     panel.className = 'chrome-plugin-demo-panel';
+//     panel.innerHTML = `
+// 		<h2>injected-script操作content-script演示区：</h2>
+// 		<div class="btn-area">
+// 			<a href="javascript:sendMessageToContentScriptByPostMessage('你好，我是普通页面！')">通过postMessage发送消息给content-script</a><br>
+// 			<a href="javascript:sendMessageToContentScriptByEvent('你好啊！我是通过DOM事件发送的消息！')">通过DOM事件发送消息给content-script</a><br>
+// 			<a href="javascript:invokeContentScript('sendMessageToBackground()')">发送消息到后台或者popup</a><br>
+// 		</div>
+// 		<div id="my_custom_log">
+// 		</div>
+// 	`;
+//     document.body.appendChild(panel);
+// }
 
 // 向页面注入JS
 function injectCustomJs(jsPath) {
@@ -92,13 +92,7 @@ function injectCustomJs(jsPath) {
 //     }
 // });
 
-// 主动发送消息给后台
-// 要演示此功能，请打开控制台主动执行sendMessageToBackground()
-function sendMessageToBackground(message) {
-    chrome.runtime.sendMessage({ greeting: message }, function(response) {
-        tip('收到来自后台的回复：' + response);
-    });
-}
+
 
 // 监听长连接
 // chrome.runtime.onConnect.addListener(function(port) {
@@ -112,14 +106,7 @@ function sendMessageToBackground(message) {
 //     }
 // });
 
-// window.addEventListener("message", function(e) {
-//     console.log('收到消息：', e.data);
-//     if (e.data && e.data.cmd == 'invoke') {
-//         eval('(' + e.data.code + ')');
-//     } else if (e.data && e.data.cmd == 'message') {
-//         tip(e.data.data);
-//     }
-// }, false);
+
 
 
 // function initCustomEventListen() {
@@ -135,6 +122,25 @@ function sendMessageToBackground(message) {
 //         tip('收到自定义事件：' + eventData);
 //     });
 // }
+
+// 主动发送消息给后台
+// 要演示此功能，请打开控制台主动执行sendMessageToBackground()
+function sendMessageToBackground(message) {
+    chrome.runtime.sendMessage(message, function(response) {
+        tip('收到来自后台的回复：' + response);
+    });
+}
+window.addEventListener("message", function(e) {
+    console.log('222收到消息：', e.data);
+    if (e.data && e.data.cmd == 'invoke') {
+        // eval('(' + e.data.code + ')');//通用写法但是属于比较危险的写法
+        if (e.data.code == 'sendMessageToBackground') {
+            this.sendMessageToBackground(e.data.message);
+        }
+    } else if (e.data && e.data.cmd == 'message') {
+        tip(e.data.data);
+    }
+}, false);
 
 var tipCount = 0;
 // 简单的消息通知
